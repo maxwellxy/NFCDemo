@@ -18,7 +18,7 @@ using Android.Media;
 namespace NFCDemo.Droid
 {
 	[Activity (Label = "SecondActivity")]		
-	[IntentFilter (new[]{AudioManager.RingerModeChangedAction,NfcAdapter.ActionTagDiscovered,NfcAdapter.ActionNdefDiscovered,NfcAdapter.ActionTechDiscovered},Categories = new[]{Intent.CategoryDefault})]
+	[IntentFilter (new[]{NfcAdapter.ActionTagDiscovered},Categories = new[]{Intent.CategoryDefault})]
 	public class SecondActivity : Activity
 	{
 		public NfcAdapter NFCdevice;
